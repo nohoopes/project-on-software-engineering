@@ -2,7 +2,6 @@
 hostname: sql12.freesqldatabase.com
 port: 3306
 uname: sql12572476
-pass: yxSJeZ9qvk
 
 *Web*
 Hosting: farmhome-farmer.vercel.app
