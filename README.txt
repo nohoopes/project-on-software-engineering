@@ -1,16 +1,11 @@
 *Database:*
 hostname: sql12.freesqldatabase.com
 port: 3306
-uname: sql12572476
 
 *Web*
 Hosting: farmhome-farmer.vercel.app
-uname: minhnhut1
-pass: Password123
 
 *Mobile:*
-uname: Vietanh
-pass: Khoa123
 
 *Note:*
 Because CORs block when hosting, please use no-security website:
