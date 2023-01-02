@@ -2,19 +2,19 @@
 hostname: sql12.freesqldatabase.com
 port: 3306
 uname: sql12572476
-pass: yxSJeZ9qvk
 
 *Web*
-Hosting: farmhome-farmer.vercel.app
+Hosting: update soon
 uname: minhnhut1
 pass: Password123
 
 *Mobile:*
+Hosting: update apk file soon
 uname: Vietanh
 pass: Khoa123
 
 *Note:*
-Because CORs block when hosting, please use no-security website:
+Because CORs block when hosting, we cannot use normal browser to use website, please use no-security website:
 1. Run cmd as admin
 2. Paste: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security  --user-data-dir=~/chromeTemp
 
