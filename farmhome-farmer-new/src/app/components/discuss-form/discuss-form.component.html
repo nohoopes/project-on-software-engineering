@@ -1,0 +1,34 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="container">
+    <div class="title">Dealing</div>
+    <div class="content">
+      <form name="discussForm" [formGroup]="discussForm" (submit)="submit()">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Order ID</span>
+            <input type="text" required formControlName="id"/>
+          </div>
+          <div class="input-box">
+            <span class="details">Order</span>
+            <input type="text" required/>
+          </div>
+          <div class="input-box">
+            <span class="details">Deal price/kg</span>
+            <input type="text" placeholder="Confirm new price" required formControlName="dealPrice" />
+          </div>
+          <div class="input-box">
+            <span class="details"> Deal amount</span>
+            <input type="text" placeholder="Confirm new price" required formControlName="dealAmount"/>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Request" />
+        </div>
+      </form>
+    </div>
+  </div>
+</body>

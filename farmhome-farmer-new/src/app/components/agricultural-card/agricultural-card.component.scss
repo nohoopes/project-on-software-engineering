@@ -1,0 +1,67 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	display: grid;
+	place-items: center center;
+	font-family: 'Poppins',sans-serif;
+	border-radius: 10px;
+	background: transparent;
+}
+.cards {
+	display: flex;
+    justify-content: space-between;
+    margin-left: -1rem;
+    flex-flow: row wrap;
+}
+.card {
+	flex: 1 0;
+    background-color: green;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+	background-color: #0f221a;
+	border-radius: 20px;
+	box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.container {
+	position: relative;
+	clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+	&:after {
+		content: "";
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 20px 20px 0 0;
+		opacity: 0.7;
+	}
+}
+img {
+	width: 300px;
+	height: 200px;
+	display: block;
+	background-size: cover;
+	border-radius: 20px 20px 0 0;
+}
+.details {
+	margin-left: 10px;
+	padding: 20px 10px;
+	>h3 {
+		color: #ffffff;
+		font-weight: 600;
+		font-size: 18px;
+		margin: 10px 0 15px 0;
+	}
+	>p {
+		color: #a0a0a0;
+		font-size: 15px;
+		line-height: 30px;
+		font-weight: 400;
+	}
+}
+#delete-btn {
+	float: right;
+}

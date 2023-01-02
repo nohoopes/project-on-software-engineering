@@ -1,0 +1,45 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="header_fixed">
+    <button mat-raised-button color="accent" style="margin-left: auto; margin-right: 0; padding: 5px" (click)="ngOnInit()">Update Status</button>
+    <table>
+      <thead>
+        <tr>
+          <th>S No.</th>
+          <th>Merchant name</th>
+          <th>Address</th>
+          <th>Phone</th>
+          <th>Order</th>
+          <th>Kilo</th>
+          <th>Price</th>
+          <th>Transport</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let o of orders.slice().reverse() let i = index">
+          <td>{{o.id}}</td>
+          <td>{{o.merchant.firstName}} {{o.merchant.lastName}}</td>
+          <td>Dĩ An, Bình Dương</td>
+          <td>{{o.merchant.phone}}</td>
+          <td>{{o.fruit.name}} </td>
+          <td>{{o.amount}}</td>
+          <td>{{o.price}}000</td>
+          <td>{{o.transport}}</td>
+          <td>
+            <div class="example-button-row">
+              <button type="button" mat-button color="primary" (click)="acceptOrder(o.id.toString())">Accept</button>
+              <button mat-button (click)="openDialog()" color="warn">Discuss</button>
+              <button type="button" mat-button color="accent" (click)="deleteOrder(o.id.toString())">Decline</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
